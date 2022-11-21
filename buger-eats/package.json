@@ -1,0 +1,17 @@
+{
+  "name": "buger-eats",
+  "version": "1.0.0",
+  "description": "Projeto de teste front-end para o sistema buger eats",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Ana Carolina Cerqueira",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^11.1.0"
+  }
+}
