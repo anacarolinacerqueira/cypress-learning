@@ -18,7 +18,9 @@ describe ('cadastro', ()=>{
                 'complemento': '2 andar',
                 'bairro': 'Centro',
                 'cidade_uf': 'Blumenau/SC' 
-            }
+            },
+            'metodo_entrega': 'Moto',
+            'cnh': 'cypress/fixtures/cnh-digital.jpg'
         }
 
         cy.get('.field input[name="name"]').type(entregador.nome)
@@ -33,6 +35,14 @@ describe ('cadastro', ()=>{
         cy.get('.field input[name="address"]').should('have.value', entregador.endereco.rua)
         cy.get('.field input[name="district"]').should('have.value', entregador.endereco.bairro)
         cy.get('.field input[name="city-uf"]').should('have.value', entregador.endereco.cidade_uf)
+
+        cy.contains('.delivery-method li span', entregador.metodo_entrega).click()
+
+        cy.get('.dropzone input').selectFile(entregador.cnh,{force: true})
+
+        cy.get('.button-success').click()
+        cy.get('#swal2-title').should('have.text', "Aí Sim...")
+        cy.get('button.swal2-confirm').click()
+
     })
-    
 })

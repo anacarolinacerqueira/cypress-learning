@@ -12,6 +12,7 @@
   "author": "Ana Carolina Cerqueira",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^11.1.0"
+    "cypress": "^11.1.0",
+    "cypress-file-upload": "^5.0.8"
   }
 }
