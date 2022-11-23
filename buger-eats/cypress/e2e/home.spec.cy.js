@@ -8,6 +8,6 @@ describe('home page', ()=>{
         cy.visit('http://buger-eats.vercel.app')
         //'cy.get' busca por elemento determinado na página
         //'.should é a função que realiza o "assert", passando os argumentos 'have.text', e em seguida o valor que deve estar no campo
-        cy.get('h1').should('have.text', 'Seja um parceiro entregador pela Buger Eats')
+        cy.get('#page-home main h1').should('have.text', 'Seja um parceiro entregador pela Buger Eats')
     })
 })
