@@ -38,4 +38,18 @@ describe('cadastro', () => {
 
     })
 
+    it('Usuário deve visualizar mensagens de erro ao enviar formulário sem preencher os campos obrigatórios', function () {
+
+        signup.clicarFormularioCadastro()
+        signup.enviarFormulario()
+        signup.validarMensagemDeErroEsperada('É necessário informar o nome')
+        signup.validarMensagemDeErroEsperada('É necessário informar o CPF')
+        signup.validarMensagemDeErroEsperada('É necessário informar o email')
+        signup.validarMensagemDeErroEsperada('É necessário informar o CEP')
+        signup.validarMensagemDeErroEsperada('É necessário informar o número do endereço')
+        signup.validarMensagemDeErroEsperada('Selecione o método de entrega')
+        signup.validarMensagemDeErroEsperada('Adicione uma foto da sua CNH')
+
+    })
+
 })

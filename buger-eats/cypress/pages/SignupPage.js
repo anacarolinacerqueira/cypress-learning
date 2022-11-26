@@ -35,8 +35,7 @@ class SignupPage {
     }
 
     validarMensagemDeErroEsperada(mensagemEsperada){
-        cy.get('.alert-error').should('have.text', mensagemEsperada)
-        
+        cy.contains('.alert-error', mensagemEsperada).should('be.visible')        
     }
 }
 
