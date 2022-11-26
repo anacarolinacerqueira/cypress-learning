@@ -34,10 +34,10 @@ class SignupPage {
         cy.get('button.swal2-confirm').click()
     }
 
-    validarMensagemEsperadaCPFInvalido(mensagemEsperada){
+    validarMensagemDeErroEsperada(mensagemEsperada){
         cy.get('.alert-error').should('have.text', mensagemEsperada)
         
     }
 }
 
-export default SignupPage;
+export default new SignupPage;
