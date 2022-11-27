@@ -21,7 +21,7 @@ export default{
                 cidade_uf: "Blumenau/SC" 
             },
             metodo_entrega: "Moto",
-            cnh: "../buger-eats/cypress/fixtures/cnh-digital.jpg"
+            cnh: "cypress/fixtures/cnh-digital.jpg"
         }
 
         return data
