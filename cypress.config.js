@@ -6,8 +6,7 @@ module.exports = defineConfig({
     viewportWidth: 1366,
     viewportHeight: 768,
     baseUrl:'https://buger-eats.vercel.app',
-      setupNodeEvents(on, config){
-
-      }
+    setupNodeEvents(on, config){
+    }
     },
   });
