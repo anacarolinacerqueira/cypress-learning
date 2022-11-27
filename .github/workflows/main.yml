@@ -12,10 +12,10 @@ jobs:
       fail-fast: false
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.1
+        uses: actions/checkout@v2
       
       - name: 'UI Tests - Chrome'
-        uses: cypress-io/github-action@v4.2.1
+        uses: cypress-io/github-action@v2
         with:
           install-command: yarn install
           # Variável de ambiente BASE_URL criada em settings, indicando o endereço que o runner deve acessar
