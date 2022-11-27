@@ -29,4 +29,3 @@ jobs:
           # Variável de ambiente CYPRESS_RECORD_KEY criada em settings, para sincronizar com cypress dashboard
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-*/
