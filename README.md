@@ -1,4 +1,6 @@
 # cypress-learning
+[![Buger Eats - Status:](https://github.com/anacarolinacerqueira/cypress-learning/actions/workflows/main.yml/badge.svg)](https://github.com/anacarolinacerqueira/cypress-learning/actions/workflows/main.yml)
+
 Repositório do meu primeiro projeto para aprendizagem do framework de testes automatizados Cypress.
 
 O sistema sob teste é o ["Buger Eats"](https://buger-eats.vercel.app/), e a arquitetura do projeto acompanha o que é proposto no curso [Cypress Discovery](https://app.qacademy.io/area/produto/item/148694), da QAcademy.
