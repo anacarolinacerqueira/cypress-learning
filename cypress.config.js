@@ -1,12 +1,15 @@
 const { defineConfig } = require('cypress');
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 
 module.exports = defineConfig({
   e2e: {
     projectId: "wp11gg",
     viewportWidth: 1366,
     viewportHeight: 768,
-    baseUrl:'https://buger-eats.vercel.app',
-    setupNodeEvents(on, config){
+    baseUrl: 'https://buger-eats.vercel.app',
+    setupNodeEvents(on, config) {
+      allureWriter(on, config);
+      return config;
     }
-    },
-  });
+  },
+});
