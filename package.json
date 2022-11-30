@@ -13,8 +13,10 @@
   "license": "ISC",
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "^2.34.0",
+    "allure": "0.0.0",
     "cypress": "^11.1.0",
     "cypress-file-upload": "^5.0.8",
     "faker": "^5.5.3"
-  }
+  },
+  "dependencies": {}
 }
