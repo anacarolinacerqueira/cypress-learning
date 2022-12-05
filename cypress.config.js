@@ -1,5 +1,6 @@
 const { defineConfig } = require('cypress');
 const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+// import allureWriter from "@shelex/cypress-allure-plugin/writer";
 
 module.exports = defineConfig({
   e2e: {
@@ -8,8 +9,12 @@ module.exports = defineConfig({
     viewportHeight: 768,
     baseUrl: 'https://buger-eats.vercel.app',
     setupNodeEvents(on, config) {
+      on('file:preprocessor', webpackPreprocessor);
       allureWriter(on, config);
       return config;
+    },
+    env: {
+      allureReuseAfterSpec: true
     }
   },
 });
