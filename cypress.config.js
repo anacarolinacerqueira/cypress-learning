@@ -9,7 +9,7 @@ module.exports = defineConfig({
     viewportHeight: 768,
     baseUrl: 'https://buger-eats.vercel.app',
     setupNodeEvents(on, config) {
-      on('file:preprocessor', webpackPreprocessor);
+      //on('file:preprocessor', webpackPreprocessor);
       allureWriter(on, config);
       return config;
     },
