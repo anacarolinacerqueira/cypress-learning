@@ -14,6 +14,7 @@ module.exports = defineConfig({
       return config;
     },
     env: {
+      "allureResultsPath": "allure-results",
       allureReuseAfterSpec: true
     }
   },
