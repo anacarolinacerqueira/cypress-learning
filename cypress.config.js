@@ -10,6 +10,7 @@ module.exports = defineConfig({
     baseUrl: 'https://buger-eats.vercel.app',
     setupNodeEvents(on, config) {
       //on('file:preprocessor', webpackPreprocessor);
+      require("cypress-mochawesome-reporter/plugin")(on);
       allureWriter(on, config);
       return config;
     },
