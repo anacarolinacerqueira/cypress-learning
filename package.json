@@ -18,5 +18,7 @@
     "cypress-file-upload": "^5.0.8",
     "faker": "^5.5.3"
   },
-  "dependencies": {}
-}
+    "cypress:run:loginModule": "npx cypress run --browser chrome --headless --spec 'cypress/integration/Auth/*.js' **--env allure=true --reporter mocha-allure-reporter",
+    "report:login:allure": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "test-loginModule:allure": "npm run cypress:run:loginModule && npm run report:login:allure" 
+} 
